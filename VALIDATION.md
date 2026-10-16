@@ -7,7 +7,7 @@ Date: 2026-10-16. Scope: static validation and independent fresh-context synthet
 - Frontmatter/name/scaffold validator: passed.
 - Example configuration JSON parsing: passed.
 - Local Markdown reference targets: passed after this validation record was added.
-- Manual portability/privacy inspection and a supporting token scan: passed; only generic placeholders and public source links are included. The literal requested attribution is retained as a configurable default.
+- Manual portability/privacy inspection and a supporting token scan: passed; only generic placeholders and public source links are included. The initial release retained its requested attribution as a configurable default; the agent-neutral revision replaces it with a required deployment placeholder.
 - No executable scripts are shipped; this package is instructions and configuration, not a tested GitHub integration.
 
 ## Independent scenario results
@@ -28,3 +28,7 @@ The initial independence wording was too broad: it could forbid providing a cano
 ## Deployment checks still required
 
 Validate actual authenticated identity resolution, exact-head API targeting, COMMENT-only submission, thread ownership, reaction targeting, read-after-write consistency, checkpoint persistence, browser/build binding, and recipient access in the chosen deployment before enabling publication. Do not interpret this package's static/scenario pass as an end-to-end production validation.
+
+## Agent-neutral revision (0.2.0, 2026-10-16)
+
+Renamed the skill to `evidence-first-review`, separated host capability requirements into a runtime-adapter reference, and replaced product-specific default attribution with a deployment placeholder. Structural validation, JSON parsing, local links, and public-content inspection were rerun. The six earlier scenario results above are historical and were not rerun for this revision. No runtime adapter or cross-agent integration has been tested. Existing authorization and publishing boundaries are unchanged.

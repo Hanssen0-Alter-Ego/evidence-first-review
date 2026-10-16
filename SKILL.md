@@ -1,11 +1,15 @@
 ---
-name: dot-review-skill
+name: evidence-first-review
 description: Review an explicitly scoped GitHub pull request or issue, verify actionable defects at an exact commit, and maintain authorized review findings. Use for evidence-based review and follow-up, not implementation, merging, or automatic monitoring.
 ---
 
-# Dot Review
+# Evidence-First Review
 
-Produce useful, reproducible review evidence with restrained publishing. This skill supplies a workflow, not permission to act on external services.
+Produce useful, reproducible review evidence with restrained publishing. The workflow is agent-neutral; a host supplies the required tools and enforces permissions. This skill grants no authority to act on external services.
+
+## Match the host capabilities
+
+Read [runtime adapters](references/runtime-adapters.md) when setting up or changing hosts. Read-only review needs access to the scoped source, exact refs, and relevant context. Independent review additionally needs a fresh isolated reviewer; tests and browser evidence require suitable safe execution tools. Publishing is optional and requires verified identity, authorization, exact-target writes, and read-back support. Missing capabilities must remain explicit limits, never assumed successes.
 
 ## Establish scope
 
