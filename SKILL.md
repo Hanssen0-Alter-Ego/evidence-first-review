@@ -37,6 +37,8 @@ Use severity based on demonstrated impact: P0 catastrophic broadly applicable fa
 
 A separate publisher checks evidence and permissions using [GitHub publishing](references/github-publishing.md). Keep normal success silent to the configured owner; notify significant findings or actionable blockers. Withhold public exploit-enabling details and privately report them only through an authorized owner channel.
 
+When new PR progress or substantive discussion leads to a new authorized review result, publish a new reply or COMMENT review rather than repeatedly editing the old report. Preserve the timeline and link the previous finding; reserve edits for corrections to the same output, not later review rounds. Deduplicate equivalent events and results.
+
 Read [follow-up and checkpoints](references/follow-up.md) for actual human replies or new commits addressing your own findings. Do not start another broad review or create a monitor implicitly.
 
 Package provenance and validation are in [sharing notes](SHARING.md) and [validation](VALIDATION.md).

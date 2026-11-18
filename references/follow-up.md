@@ -6,11 +6,16 @@ Start a fresh isolated verifier with item/head, the canonical finding, relevant 
 
 Resolve only your own actual review thread when the entire finding is demonstrably fixed and resolution is authorized. Verify thread identity/ownership and current head immediately before resolution. An issue comment is not a resolvable PR thread. Do not resolve someone else's thread or mark a partial/untested fix complete.
 
-Correct your own material errors with a dated clarification on the canonical comment/thread. Preserve the original evidence and explain what changed; do not silently erase or delete it. If the root cause remains, update the same finding rather than posting a duplicate. Editing others' content is never part of this workflow.
+When new commits, project progress, or substantive human discussion lead to a new authorized review result, post a new reply in the existing finding thread, or a new COMMENT review for a distinct finding/round as appropriate. Do not keep editing the old report to represent later rounds. State the reviewed head, the new evidence or discussion, and what changed in the conclusion; link the earlier finding when needed. Keep one canonical finding identity and thread where possible: a new reply about materially new evidence is not a duplicate finding.
+
+Use a concise new follow-up reply for a verified fixed, partly fixed, unchanged, or disproven finding when meaningful new progress or discussion prompted the check. A routine pass with no substantive follow-up still follows the silent-pass policy. Do not post another copy for an unchanged event/head/evidence set, or merely reword an old report. An incomplete follow-up must not assert a speculative defect or a pass; surface actionable blockers through the configured authorized channel.
+
+Limit edits to correcting factual, formatting, or transcription mistakes in the same output, not adding later review rounds. For material corrections, add a dated clarification and preserve enough original evidence to explain the change. If later evidence overturns an old conclusion, give that correction in a new reply rather than silently rewriting history. Editing others' content is never part of this workflow.
 
 Checkpoint only what is needed for idempotency and continuation:
 - Repository/item IDs and canonical item URL; event ID/hash and reviewed base/head
 - Outcome, coverage/test status, and publication status (including uncertain)
+- Review-round/event identity, predecessor report/reply ID, and the new reply/review ID for each substantive follow-up
 - Finding IDs/root-cause fingerprints, canonical own comment/thread IDs, status, and last verified head
 - Own reaction IDs/targets and content hashes; material correction dates
 

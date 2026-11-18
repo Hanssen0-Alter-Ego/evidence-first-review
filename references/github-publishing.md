@@ -33,10 +33,10 @@ Tests: <actual status and relevant command/result>.
 <configured attribution>
 ```
 
-Use the configured attribution exactly. Keep one canonical own comment/thread per distinct finding. Do not repeat it on every event or across multiple comment types. An optional evidence comment must add meaningful authorized evidence, not another summary of the same finding.
+Use the configured attribution exactly. Keep one canonical own comment/thread per distinct finding. Do not repeat it on every event or across multiple comment types. For substantive follow-up results caused by new progress or discussion, append a new reply to that thread instead of editing an old report; use a new COMMENT review for a distinct finding/round when appropriate. Keep the earlier report and its head/evidence intact. A canonical finding may have multiple chronological replies, but not repeated equivalent reports. Reserve edits for correcting the same output. Each new reply must add meaningful authorized evidence or a verified status change, not another summary of the same finding.
 
 ## No qualifying finding
 
-For validated_pass only, add a heart to the original PR/issue body if that reaction is authorized and absent. Do not leave a routine pass comment or review approval. Incomplete results get neither a heart nor a speculative finding/comment; privately surface an actionable blocker as configured.
+For validated_pass only, add a heart to the original PR/issue body if that reaction is authorized and absent. Do not leave a routine pass comment or review approval. This does not suppress an authorized new reply reporting a substantive follow-up on an existing finding, such as verification of a fix prompted by new commits or discussion; follow the chronological-reply rules in follow-up.md. Incomplete results get neither a heart nor a speculative finding/comment; privately surface an actionable blocker as configured.
 
 Read back every write to verify the target and resulting content/reaction. Capture returned stable IDs. Successful API acceptance alone does not prove the intended object changed. If verification fails, mark publication uncertain and reconcile without a duplicate write.
