@@ -2,7 +2,7 @@
 
 An agent-neutral, instruction-only workflow for evidence-based GitHub pull request and issue reviews. It separates independent verification from authorized publication, binds findings to an exact commit, and distinguishes a validated pass from incomplete evidence.
 
-**Version:** 0.2.0 · **Status:** public source; no open-source license has been granted.
+**Version:** 0.2.1 · **Status:** public source; no open-source license has been granted.
 
 ## What it does
 
