@@ -14,18 +14,19 @@ For PRs, use an inline review comment tied to the reviewed commit and the smalle
 
 For an eligible issue, use an ordinary issue comment only for a verified factual error, reproduction difference, or concrete proposal defect. Include a stable evidence reference rather than inventing a diff line.
 
+Lead with the conclusion and practical impact. In the overall review, summarize the result and highest-priority issues in one or two short sentences; do not open with methodology or a full test log. For an inline finding, use the severity and a plain-language headline, followed by one or two sentences explaining what breaks. Place detailed reproduction, exact-head evidence, test scope and suggested fixes later, preferably in a folded section. Put any limitation that changes the conclusion up front; brevity does not relax the evidence requirement. Keep one inline finding per distinct root cause.
+
 Suggested body (fill only supported details):
 
 ```
 [P2] Short actionable title
 
 When <specific trigger>, <actual behavior> causes <concrete impact>.
-<Brief evidence and expected behavior, bound to the reviewed head.>
-Tests: <actual status and relevant command/result>.
 
 <details>
-<summary>Suggested fix</summary>
+<summary>Evidence and suggested fix</summary>
 
+<Exact-head evidence, expected behavior, and checks actually performed.>
 <Concrete direction; distinguish a tested fix from an untested proposal.>
 
 </details>
