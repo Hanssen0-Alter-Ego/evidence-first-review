@@ -1,6 +1,8 @@
 ---
 name: evidence-first-review
 description: Review an explicitly scoped GitHub pull request or issue, verify actionable defects at an exact commit, and maintain authorized review findings. Use for evidence-based review and follow-up, not implementation, merging, or automatic monitoring.
+metadata:
+  version: "0.2.4"
 ---
 
 # Evidence-First Review
