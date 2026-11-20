@@ -32,3 +32,7 @@ Validate actual authenticated identity resolution, exact-head API targeting, COM
 ## Agent-neutral revision (0.2.0, 2026-10-16)
 
 Renamed the skill to `evidence-first-review`, separated host capability requirements into a runtime-adapter reference, and replaced product-specific default attribution with a deployment placeholder. Structural validation, JSON parsing, local links, and public-content inspection were rerun. The six earlier scenario results above are historical and were not rerun for this revision. No runtime adapter or cross-agent integration has been tested. Existing authorization and publishing boundaries are unchanged.
+
+## Version 0.2.5: evidence package and linked issues
+
+The source and package were checked for matching version and workflow, valid JSON, and stored/referenced files. The linked-issue path is limited to frozen, permitted public evidence. No live linked-issue dual review was run as part of this documentation update.
